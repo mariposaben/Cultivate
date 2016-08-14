@@ -3,7 +3,7 @@
   <ModelProperties>
     <RowOne>0</RowOne>
     <SchemaVersion>8</SchemaVersion>
-    <LastEditTimeStamp>2016-08-06T10:29:19.7449664-07:00</LastEditTimeStamp>
+    <LastEditTimeStamp>2016-08-14T08:53:28.1160304-07:00</LastEditTimeStamp>
     <Name>Cultivar</Name>
     <Author>BENSWINLAPTOP\marip</Author>
     <Version>1.0.0</Version>
@@ -122,11 +122,39 @@
         <DataTypeName>varchar</DataTypeName>
         <Width>256</Width>
       </ModelTableColumn>
+      <ModelTableColumn>
+        <ModelTableId>0</ModelTableId>
+        <ModelTableColumnId>3</ModelTableColumnId>
+        <Sequence>3</Sequence>
+        <Name>CreatedById</Name>
+        <DataTypeName>int</DataTypeName>
+      </ModelTableColumn>
+      <ModelTableColumn>
+        <ModelTableId>0</ModelTableId>
+        <ModelTableColumnId>4</ModelTableColumnId>
+        <Sequence>4</Sequence>
+        <Name>CreateDateTime</Name>
+        <DataTypeName>datetime</DataTypeName>
+      </ModelTableColumn>
+      <ModelTableColumn>
+        <ModelTableId>0</ModelTableId>
+        <ModelTableColumnId>5</ModelTableColumnId>
+        <Sequence>5</Sequence>
+        <Name>LastChangedById</Name>
+        <DataTypeName>int</DataTypeName>
+      </ModelTableColumn>
+      <ModelTableColumn>
+        <ModelTableId>0</ModelTableId>
+        <ModelTableColumnId>6</ModelTableColumnId>
+        <Sequence>6</Sequence>
+        <Name>LastChangedDateTime</Name>
+        <DataTypeName>datetime</DataTypeName>
+      </ModelTableColumn>
       <ModelTableLocation>
         <SubModelId>0</SubModelId>
         <ModelTableId>0</ModelTableId>
-        <WorldXi>50</WorldXi>
-        <WorldYi>51</WorldYi>
+        <WorldXi>32</WorldXi>
+        <WorldYi>20</WorldYi>
       </ModelTableLocation>
       <ModelTableIndex>
         <ModelTableId>0</ModelTableId>
@@ -185,8 +213,8 @@
       <ModelTableLocation>
         <SubModelId>0</SubModelId>
         <ModelTableId>2</ModelTableId>
-        <WorldXi>48</WorldXi>
-        <WorldYi>157</WorldYi>
+        <WorldXi>45</WorldXi>
+        <WorldYi>175</WorldYi>
       </ModelTableLocation>
       <ModelTableIndex>
         <ModelTableId>2</ModelTableId>
@@ -278,6 +306,12 @@
         <Sequence>0</Sequence>
         <Name>Id</Name>
         <DataTypeName>int</DataTypeName>
+        <IdentitySeed>1</IdentitySeed>
+        <IdentityIncrement>1</IdentityIncrement>
+        <ModelTableIdentity>
+          <ModelTableId>4</ModelTableId>
+          <ModelTableColumnId>0</ModelTableColumnId>
+        </ModelTableIdentity>
       </ModelTableColumn>
       <ModelTableColumn>
         <ModelTableId>4</ModelTableId>
@@ -336,6 +370,7 @@
         <ModelTableColumnId>8</ModelTableColumnId>
         <Sequence>8</Sequence>
         <Name>CreateDateTime</Name>
+        <DefaultValue>SYSUTCDATETIME()</DefaultValue>
         <DataTypeName>datetime</DataTypeName>
       </ModelTableColumn>
       <ModelTableColumn>
@@ -349,7 +384,8 @@
         <ModelTableId>4</ModelTableId>
         <ModelTableColumnId>10</ModelTableColumnId>
         <Sequence>10</Sequence>
-        <Name>LastChangeDateTime</Name>
+        <Name>LastChangedDateTime</Name>
+        <DefaultValue>SYSUTCDATETIME()</DefaultValue>
         <DataTypeName>datetime</DataTypeName>
       </ModelTableColumn>
       <ModelRelationship>
@@ -376,11 +412,35 @@
           <ChildColumnId>4</ChildColumnId>
         </ModelRelationshipMapping>
       </ModelRelationship>
+      <ModelRelationship>
+        <ParentModelTableId>3</ParentModelTableId>
+        <ModelTableIndexId>0</ModelTableIndexId>
+        <ChildModelTableId>4</ChildModelTableId>
+        <ModelRelationshipMapping>
+          <ParentModelTableId>3</ParentModelTableId>
+          <ChildModelTableId>4</ChildModelTableId>
+          <ModelTableIndexId>0</ModelTableIndexId>
+          <ParentColumnId>0</ParentColumnId>
+          <ChildColumnId>5</ChildColumnId>
+        </ModelRelationshipMapping>
+      </ModelRelationship>
+      <ModelRelationship>
+        <ParentModelTableId>1</ParentModelTableId>
+        <ModelTableIndexId>0</ModelTableIndexId>
+        <ChildModelTableId>4</ChildModelTableId>
+        <ModelRelationshipMapping>
+          <ParentModelTableId>1</ParentModelTableId>
+          <ChildModelTableId>4</ChildModelTableId>
+          <ModelTableIndexId>0</ModelTableIndexId>
+          <ParentColumnId>0</ParentColumnId>
+          <ChildColumnId>6</ChildColumnId>
+        </ModelRelationshipMapping>
+      </ModelRelationship>
       <ModelTableLocation>
         <SubModelId>0</SubModelId>
         <ModelTableId>4</ModelTableId>
-        <WorldXi>323</WorldXi>
-        <WorldYi>141</WorldYi>
+        <WorldXi>375</WorldXi>
+        <WorldYi>159</WorldYi>
       </ModelTableLocation>
       <ModelTableIndex>
         <ModelTableId>4</ModelTableId>
@@ -396,6 +456,92 @@
         </ModelTableIndexColumn>
         <ModelTablePrimaryKey>
           <ModelTableId>4</ModelTableId>
+          <ModelTableIndexId>0</ModelTableIndexId>
+          <Clustered>true</Clustered>
+        </ModelTablePrimaryKey>
+      </ModelTableIndex>
+    </ModelTable>
+    <ModelTable>
+      <ModelTableId>5</ModelTableId>
+      <ModelSchemaId>0</ModelSchemaId>
+      <Name>Exchange</Name>
+      <IncludeInDataSync>true</IncludeInDataSync>
+      <ModelTableColumn>
+        <ModelTableId>5</ModelTableId>
+        <ModelTableColumnId>0</ModelTableColumnId>
+        <Sequence>0</Sequence>
+        <Name>Id</Name>
+        <DataTypeName>int</DataTypeName>
+        <IdentitySeed>1</IdentitySeed>
+        <IdentityIncrement>1</IdentityIncrement>
+        <ModelTableIdentity>
+          <ModelTableId>5</ModelTableId>
+          <ModelTableColumnId>0</ModelTableColumnId>
+        </ModelTableIdentity>
+      </ModelTableColumn>
+      <ModelTableLocation>
+        <SubModelId>0</SubModelId>
+        <ModelTableId>5</ModelTableId>
+        <WorldXi>413</WorldXi>
+        <WorldYi>384</WorldYi>
+      </ModelTableLocation>
+      <ModelTableIndex>
+        <ModelTableId>5</ModelTableId>
+        <ModelTableIndexId>0</ModelTableIndexId>
+        <Sequence>0</Sequence>
+        <IsIndex>false</IsIndex>
+        <IsUnique>true</IsUnique>
+        <ModelTableIndexColumn>
+          <ModelTableId>5</ModelTableId>
+          <ModelTableIndexId>0</ModelTableIndexId>
+          <ModelTableColumnId>0</ModelTableColumnId>
+          <Sequence>0</Sequence>
+        </ModelTableIndexColumn>
+        <ModelTablePrimaryKey>
+          <ModelTableId>5</ModelTableId>
+          <ModelTableIndexId>0</ModelTableIndexId>
+          <Clustered>true</Clustered>
+        </ModelTablePrimaryKey>
+      </ModelTableIndex>
+    </ModelTable>
+    <ModelTable>
+      <ModelTableId>6</ModelTableId>
+      <ModelSchemaId>0</ModelSchemaId>
+      <Name>SystemSettings</Name>
+      <IncludeInDataSync>true</IncludeInDataSync>
+      <ModelTableColumn>
+        <ModelTableId>6</ModelTableId>
+        <ModelTableColumnId>0</ModelTableColumnId>
+        <Sequence>0</Sequence>
+        <Name>Id</Name>
+        <DataTypeName>int</DataTypeName>
+        <IdentitySeed>1</IdentitySeed>
+        <IdentityIncrement>1</IdentityIncrement>
+        <ModelTableIdentity>
+          <ModelTableId>6</ModelTableId>
+          <ModelTableColumnId>0</ModelTableColumnId>
+        </ModelTableIdentity>
+      </ModelTableColumn>
+      <ModelTableLocation>
+        <SubModelId>0</SubModelId>
+        <ModelTableId>6</ModelTableId>
+        <WorldXi>371</WorldXi>
+        <WorldYi>432</WorldYi>
+      </ModelTableLocation>
+      <ModelTableIndex>
+        <ModelTableId>6</ModelTableId>
+        <ModelTableIndexId>0</ModelTableIndexId>
+        <Sequence>0</Sequence>
+        <IsIndex>false</IsIndex>
+        <IsUnique>true</IsUnique>
+        <ModelTableIndexColumn>
+          <ModelTableId>6</ModelTableId>
+          <ModelTableIndexId>0</ModelTableIndexId>
+          <ModelTableColumnId>0</ModelTableColumnId>
+          <Sequence>0</Sequence>
+        </ModelTableIndexColumn>
+        <ModelTablePrimaryKey>
+          <ModelTableId>6</ModelTableId>
           <ModelTableIndexId>0</ModelTableIndexId>
           <Clustered>true</Clustered>
         </ModelTablePrimaryKey>
