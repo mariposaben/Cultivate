@@ -3,7 +3,7 @@
   <ModelProperties>
     <RowOne>0</RowOne>
     <SchemaVersion>8</SchemaVersion>
-    <LastEditTimeStamp>2016-08-14T08:53:28.1160304-07:00</LastEditTimeStamp>
+    <LastEditTimeStamp>2016-08-23T14:32:04.0459207-07:00</LastEditTimeStamp>
     <Name>Cultivar</Name>
     <Author>BENSWINLAPTOP\marip</Author>
     <Version>1.0.0</Version>
@@ -14,7 +14,7 @@
     <SubModelId>0</SubModelId>
     <Name>Main</Name>
     <ViewX>0</ViewX>
-    <ViewY>14.712993993044563</ViewY>
+    <ViewY>99.766094109326048</ViewY>
     <ZoomLevel>105.69079987353778</ZoomLevel>
     <CanvasWidthi>697</CanvasWidthi>
     <CanvasHeighti>600</CanvasHeighti>
@@ -66,7 +66,7 @@
         <SubModelId>0</SubModelId>
         <ModelTableId>1</ModelTableId>
         <WorldXi>46</WorldXi>
-        <WorldYi>385</WorldYi>
+        <WorldYi>409</WorldYi>
       </ModelTableLocation>
       <ModelTableIndex>
         <ModelTableId>1</ModelTableId>
@@ -134,6 +134,7 @@
         <ModelTableColumnId>4</ModelTableColumnId>
         <Sequence>4</Sequence>
         <Name>CreateDateTime</Name>
+        <DefaultValue>SYSUTCDATETIME()</DefaultValue>
         <DataTypeName>datetime</DataTypeName>
       </ModelTableColumn>
       <ModelTableColumn>
@@ -148,13 +149,14 @@
         <ModelTableColumnId>6</ModelTableColumnId>
         <Sequence>6</Sequence>
         <Name>LastChangedDateTime</Name>
+        <DefaultValue>SYSUTCDATETIME()</DefaultValue>
         <DataTypeName>datetime</DataTypeName>
       </ModelTableColumn>
       <ModelTableLocation>
         <SubModelId>0</SubModelId>
         <ModelTableId>0</ModelTableId>
-        <WorldXi>32</WorldXi>
-        <WorldYi>20</WorldYi>
+        <WorldXi>45</WorldXi>
+        <WorldYi>24</WorldYi>
       </ModelTableLocation>
       <ModelTableIndex>
         <ModelTableId>0</ModelTableId>
@@ -210,11 +212,41 @@
         <DataTypeName>varchar</DataTypeName>
         <Width>256</Width>
       </ModelTableColumn>
+      <ModelTableColumn>
+        <ModelTableId>2</ModelTableId>
+        <ModelTableColumnId>3</ModelTableColumnId>
+        <Sequence>3</Sequence>
+        <Name>CreatedById</Name>
+        <DataTypeName>int</DataTypeName>
+      </ModelTableColumn>
+      <ModelTableColumn>
+        <ModelTableId>2</ModelTableId>
+        <ModelTableColumnId>4</ModelTableColumnId>
+        <Sequence>4</Sequence>
+        <Name>CreateDateTime</Name>
+        <DefaultValue>SYSUTCDATETIME()</DefaultValue>
+        <DataTypeName>datetime</DataTypeName>
+      </ModelTableColumn>
+      <ModelTableColumn>
+        <ModelTableId>2</ModelTableId>
+        <ModelTableColumnId>5</ModelTableColumnId>
+        <Sequence>5</Sequence>
+        <Name>LastChangedById</Name>
+        <DataTypeName>int</DataTypeName>
+      </ModelTableColumn>
+      <ModelTableColumn>
+        <ModelTableId>2</ModelTableId>
+        <ModelTableColumnId>6</ModelTableColumnId>
+        <Sequence>6</Sequence>
+        <Name>LastChangedDateTime</Name>
+        <DefaultValue>SYSUTCDATETIME()</DefaultValue>
+        <DataTypeName>datetime</DataTypeName>
+      </ModelTableColumn>
       <ModelTableLocation>
         <SubModelId>0</SubModelId>
         <ModelTableId>2</ModelTableId>
-        <WorldXi>45</WorldXi>
-        <WorldYi>175</WorldYi>
+        <WorldXi>48</WorldXi>
+        <WorldYi>166</WorldYi>
       </ModelTableLocation>
       <ModelTableIndex>
         <ModelTableId>2</ModelTableId>
@@ -273,8 +305,8 @@
       <ModelTableLocation>
         <SubModelId>0</SubModelId>
         <ModelTableId>3</ModelTableId>
-        <WorldXi>47</WorldXi>
-        <WorldYi>274</WorldYi>
+        <WorldXi>50</WorldXi>
+        <WorldYi>316</WorldYi>
       </ModelTableLocation>
       <ModelTableIndex>
         <ModelTableId>3</ModelTableId>
@@ -507,7 +539,7 @@
     <ModelTable>
       <ModelTableId>6</ModelTableId>
       <ModelSchemaId>0</ModelSchemaId>
-      <Name>SystemSettings</Name>
+      <Name>SystemValues</Name>
       <IncludeInDataSync>true</IncludeInDataSync>
       <ModelTableColumn>
         <ModelTableId>6</ModelTableId>
@@ -525,8 +557,8 @@
       <ModelTableLocation>
         <SubModelId>0</SubModelId>
         <ModelTableId>6</ModelTableId>
-        <WorldXi>371</WorldXi>
-        <WorldYi>432</WorldYi>
+        <WorldXi>415</WorldXi>
+        <WorldYi>449</WorldYi>
       </ModelTableLocation>
       <ModelTableIndex>
         <ModelTableId>6</ModelTableId>
@@ -546,6 +578,30 @@
           <Clustered>true</Clustered>
         </ModelTablePrimaryKey>
       </ModelTableIndex>
+    </ModelTable>
+    <ModelTable>
+      <ModelTableId>7</ModelTableId>
+      <ModelSchemaId>0</ModelSchemaId>
+      <Name>ScientificName</Name>
+      <IncludeInDataSync>true</IncludeInDataSync>
+      <ModelTableLocation>
+        <SubModelId>0</SubModelId>
+        <ModelTableId>7</ModelTableId>
+        <WorldXi>334</WorldXi>
+        <WorldYi>495</WorldYi>
+      </ModelTableLocation>
+    </ModelTable>
+    <ModelTable>
+      <ModelTableId>8</ModelTableId>
+      <ModelSchemaId>0</ModelSchemaId>
+      <Name>Cultivar</Name>
+      <IncludeInDataSync>true</IncludeInDataSync>
+      <ModelTableLocation>
+        <SubModelId>0</SubModelId>
+        <ModelTableId>8</ModelTableId>
+        <WorldXi>596</WorldXi>
+        <WorldYi>538</WorldYi>
+      </ModelTableLocation>
     </ModelTable>
   </ModelSchema>
 </DataModel>
