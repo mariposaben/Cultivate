@@ -3,7 +3,7 @@
   <ModelProperties>
     <RowOne>0</RowOne>
     <SchemaVersion>8</SchemaVersion>
-    <LastEditTimeStamp>2016-08-23T17:06:35.7392224-07:00</LastEditTimeStamp>
+    <LastEditTimeStamp>2016-08-23T17:49:59.8952798-07:00</LastEditTimeStamp>
     <Name>Cultivar</Name>
     <Author>BENSWINLAPTOP\marip</Author>
     <Version>1.0.0</Version>
@@ -13,8 +13,8 @@
   <SubModel>
     <SubModelId>0</SubModelId>
     <Name>Main</Name>
-    <ViewX>0</ViewX>
-    <ViewY>75.4874992096112</ViewY>
+    <ViewX>108.58319869968112</ViewX>
+    <ViewY>0</ViewY>
     <ZoomLevel>105.69079987353778</ZoomLevel>
     <CanvasWidthi>1270</CanvasWidthi>
     <CanvasHeighti>625</CanvasHeighti>
@@ -59,8 +59,7 @@
         <Sequence>2</Sequence>
         <Name>Description</Name>
         <AllowNull>true</AllowNull>
-        <DataTypeName>varchar</DataTypeName>
-        <Width>256</Width>
+        <DataTypeName>text</DataTypeName>
       </ModelTableColumn>
       <ModelTableColumn>
         <ModelTableId>1</ModelTableId>
@@ -149,8 +148,7 @@
         <Sequence>2</Sequence>
         <Name>Description</Name>
         <AllowNull>true</AllowNull>
-        <DataTypeName>varchar</DataTypeName>
-        <Width>256</Width>
+        <DataTypeName>text</DataTypeName>
       </ModelTableColumn>
       <ModelTableColumn>
         <ModelTableId>0</ModelTableId>
@@ -239,8 +237,7 @@
         <Sequence>2</Sequence>
         <Name>Description</Name>
         <AllowNull>true</AllowNull>
-        <DataTypeName>varchar</DataTypeName>
-        <Width>256</Width>
+        <DataTypeName>text</DataTypeName>
       </ModelTableColumn>
       <ModelTableColumn>
         <ModelTableId>3</ModelTableId>
@@ -335,8 +332,7 @@
         <Sequence>2</Sequence>
         <Name>Description</Name>
         <AllowNull>true</AllowNull>
-        <DataTypeName>varchar</DataTypeName>
-        <Width>256</Width>
+        <DataTypeName>text</DataTypeName>
       </ModelTableColumn>
       <ModelTableColumn>
         <ModelTableId>4</ModelTableId>
@@ -517,8 +513,8 @@
         <ModelTableColumnId>5</ModelTableColumnId>
         <Sequence>3</Sequence>
         <Name>Description</Name>
-        <DataTypeName>varchar</DataTypeName>
-        <Width>256</Width>
+        <AllowNull>true</AllowNull>
+        <DataTypeName>text</DataTypeName>
       </ModelTableColumn>
       <ModelTableColumn>
         <ModelTableId>5</ModelTableId>
@@ -612,20 +608,19 @@
         <ModelTableColumnId>3</ModelTableColumnId>
         <Sequence>3</Sequence>
         <Name>Value</Name>
-        <DataTypeName>varchar</DataTypeName>
-        <Width>64</Width>
+        <DataTypeName>text</DataTypeName>
       </ModelTableColumn>
       <ModelTableColumn>
         <ModelTableId>6</ModelTableId>
         <ModelTableColumnId>4</ModelTableColumnId>
-        <Sequence>4</Sequence>
+        <Sequence>6</Sequence>
         <Name>CreatedById</Name>
         <DataTypeName>int</DataTypeName>
       </ModelTableColumn>
       <ModelTableColumn>
         <ModelTableId>6</ModelTableId>
         <ModelTableColumnId>5</ModelTableColumnId>
-        <Sequence>5</Sequence>
+        <Sequence>7</Sequence>
         <Name>CreateDateTime</Name>
         <DefaultValue>SYSUTCDATETIME()</DefaultValue>
         <DataTypeName>datetime</DataTypeName>
@@ -633,23 +628,39 @@
       <ModelTableColumn>
         <ModelTableId>6</ModelTableId>
         <ModelTableColumnId>6</ModelTableColumnId>
-        <Sequence>6</Sequence>
+        <Sequence>8</Sequence>
         <Name>LastChangedById</Name>
         <DataTypeName>int</DataTypeName>
       </ModelTableColumn>
       <ModelTableColumn>
         <ModelTableId>6</ModelTableId>
         <ModelTableColumnId>7</ModelTableColumnId>
-        <Sequence>7</Sequence>
+        <Sequence>9</Sequence>
         <Name>LastChangedDateTime</Name>
         <DefaultValue>SYSUTCDATETIME()</DefaultValue>
         <DataTypeName>datetime</DataTypeName>
+      </ModelTableColumn>
+      <ModelTableColumn>
+        <ModelTableId>6</ModelTableId>
+        <ModelTableColumnId>8</ModelTableColumnId>
+        <Sequence>5</Sequence>
+        <Name>DataType</Name>
+        <DataTypeName>varchar</DataTypeName>
+        <Width>64</Width>
+      </ModelTableColumn>
+      <ModelTableColumn>
+        <ModelTableId>6</ModelTableId>
+        <ModelTableColumnId>9</ModelTableColumnId>
+        <Sequence>4</Sequence>
+        <Name>Description</Name>
+        <AllowNull>true</AllowNull>
+        <DataTypeName>text</DataTypeName>
       </ModelTableColumn>
       <ModelTableLocation>
         <SubModelId>0</SubModelId>
         <ModelTableId>6</ModelTableId>
         <WorldXi>671</WorldXi>
-        <WorldYi>466</WorldYi>
+        <WorldYi>443</WorldYi>
       </ModelTableLocation>
       <ModelTableIndex>
         <ModelTableId>6</ModelTableId>
@@ -790,8 +801,8 @@
         <ModelTableColumnId>2</ModelTableColumnId>
         <Sequence>2</Sequence>
         <Name>Description</Name>
-        <DataTypeName>varchar</DataTypeName>
-        <Width>256</Width>
+        <AllowNull>true</AllowNull>
+        <DataTypeName>text</DataTypeName>
       </ModelTableColumn>
       <ModelTableColumn>
         <ModelTableId>8</ModelTableId>
@@ -885,8 +896,7 @@
         <Sequence>2</Sequence>
         <Name>Description</Name>
         <AllowNull>true</AllowNull>
-        <DataTypeName>varchar</DataTypeName>
-        <Width>256</Width>
+        <DataTypeName>text</DataTypeName>
       </ModelTableColumn>
       <ModelTableColumn>
         <ModelTableId>2</ModelTableId>
