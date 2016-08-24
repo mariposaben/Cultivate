@@ -3,7 +3,7 @@
   <ModelProperties>
     <RowOne>0</RowOne>
     <SchemaVersion>8</SchemaVersion>
-    <LastEditTimeStamp>2016-08-23T16:45:27.5788674-07:00</LastEditTimeStamp>
+    <LastEditTimeStamp>2016-08-23T17:06:35.7392224-07:00</LastEditTimeStamp>
     <Name>Cultivar</Name>
     <Author>BENSWINLAPTOP\marip</Author>
     <Version>1.0.0</Version>
@@ -14,7 +14,7 @@
     <SubModelId>0</SubModelId>
     <Name>Main</Name>
     <ViewX>0</ViewX>
-    <ViewY>0</ViewY>
+    <ViewY>75.4874992096112</ViewY>
     <ZoomLevel>105.69079987353778</ZoomLevel>
     <CanvasWidthi>1270</CanvasWidthi>
     <CanvasHeighti>625</CanvasHeighti>
@@ -469,6 +469,85 @@
           <ModelTableColumnId>0</ModelTableColumnId>
         </ModelTableIdentity>
       </ModelTableColumn>
+      <ModelTableColumn>
+        <ModelTableId>5</ModelTableId>
+        <ModelTableColumnId>1</ModelTableColumnId>
+        <Sequence>4</Sequence>
+        <Name>Quantity</Name>
+        <DataTypeName>int</DataTypeName>
+      </ModelTableColumn>
+      <ModelTableColumn>
+        <ModelTableId>5</ModelTableId>
+        <ModelTableColumnId>2</ModelTableColumnId>
+        <Sequence>7</Sequence>
+        <Name>ExchangeExpirationDate</Name>
+        <AllowNull>true</AllowNull>
+        <DataTypeName>datetime</DataTypeName>
+      </ModelTableColumn>
+      <ModelTableColumn>
+        <ModelTableId>5</ModelTableId>
+        <ModelTableColumnId>3</ModelTableColumnId>
+        <Sequence>8</Sequence>
+        <Name>MustReoffer</Name>
+        <DataTypeName>bit</DataTypeName>
+      </ModelTableColumn>
+      <ModelTableColumn>
+        <ModelTableId>5</ModelTableId>
+        <ModelTableColumnId>4</ModelTableColumnId>
+        <Sequence>9</Sequence>
+        <Name>SourceId</Name>
+        <DataTypeName>int</DataTypeName>
+      </ModelTableColumn>
+      <ModelTableColumn>
+        <ModelTableId>5</ModelTableId>
+        <ModelTableColumnId>6</ModelTableColumnId>
+        <Sequence>10</Sequence>
+        <Name>SeedExpirationDate</Name>
+        <DataTypeName>int</DataTypeName>
+      </ModelTableColumn>
+      <ModelTableColumn>
+        <ModelTableId>5</ModelTableId>
+        <ModelTableColumnId>7</ModelTableColumnId>
+        <Sequence>2</Sequence>
+        <Name>MemberId</Name>
+        <DataTypeName>int</DataTypeName>
+      </ModelTableColumn>
+      <ModelTableColumn>
+        <ModelTableId>5</ModelTableId>
+        <ModelTableColumnId>5</ModelTableColumnId>
+        <Sequence>3</Sequence>
+        <Name>Description</Name>
+        <DataTypeName>varchar</DataTypeName>
+        <Width>256</Width>
+      </ModelTableColumn>
+      <ModelTableColumn>
+        <ModelTableId>5</ModelTableId>
+        <ModelTableColumnId>8</ModelTableColumnId>
+        <Sequence>1</Sequence>
+        <Name>SeedId</Name>
+        <DataTypeName>int</DataTypeName>
+      </ModelTableColumn>
+      <ModelTableColumn>
+        <ModelTableId>5</ModelTableId>
+        <ModelTableColumnId>9</ModelTableColumnId>
+        <Sequence>5</Sequence>
+        <Name>ExchangeTypeId</Name>
+        <DataTypeName>int</DataTypeName>
+      </ModelTableColumn>
+      <ModelTableColumn>
+        <ModelTableId>5</ModelTableId>
+        <ModelTableColumnId>10</ModelTableColumnId>
+        <Sequence>6</Sequence>
+        <Name>UnitsId</Name>
+        <DataTypeName>int</DataTypeName>
+      </ModelTableColumn>
+      <ModelTableColumn>
+        <ModelTableId>5</ModelTableId>
+        <ModelTableColumnId>11</ModelTableColumnId>
+        <Sequence>11</Sequence>
+        <Name>StatusId</Name>
+        <DataTypeName>int</DataTypeName>
+      </ModelTableColumn>
       <ModelTableLocation>
         <SubModelId>0</SubModelId>
         <ModelTableId>5</ModelTableId>
@@ -862,6 +941,129 @@
         </ModelTableIndexColumn>
         <ModelTablePrimaryKey>
           <ModelTableId>2</ModelTableId>
+          <ModelTableIndexId>0</ModelTableIndexId>
+          <Clustered>true</Clustered>
+        </ModelTablePrimaryKey>
+      </ModelTableIndex>
+    </ModelTable>
+    <ModelTable>
+      <ModelTableId>9</ModelTableId>
+      <ModelSchemaId>0</ModelSchemaId>
+      <Name>Units</Name>
+      <IncludeInDataSync>true</IncludeInDataSync>
+      <ModelTableColumn>
+        <ModelTableId>9</ModelTableId>
+        <ModelTableColumnId>0</ModelTableColumnId>
+        <Sequence>0</Sequence>
+        <Name>Id</Name>
+        <DataTypeName>int</DataTypeName>
+        <IdentitySeed>1</IdentitySeed>
+        <IdentityIncrement>1</IdentityIncrement>
+        <ModelTableIdentity>
+          <ModelTableId>9</ModelTableId>
+          <ModelTableColumnId>0</ModelTableColumnId>
+        </ModelTableIdentity>
+      </ModelTableColumn>
+      <ModelTableLocation>
+        <SubModelId>0</SubModelId>
+        <ModelTableId>9</ModelTableId>
+        <WorldXi>831</WorldXi>
+        <WorldYi>300</WorldYi>
+      </ModelTableLocation>
+      <ModelTableIndex>
+        <ModelTableId>9</ModelTableId>
+        <ModelTableIndexId>0</ModelTableIndexId>
+        <Sequence>0</Sequence>
+        <IsIndex>false</IsIndex>
+        <IsUnique>true</IsUnique>
+        <ModelTableIndexColumn>
+          <ModelTableId>9</ModelTableId>
+          <ModelTableIndexId>0</ModelTableIndexId>
+          <ModelTableColumnId>0</ModelTableColumnId>
+          <Sequence>0</Sequence>
+        </ModelTableIndexColumn>
+        <ModelTablePrimaryKey>
+          <ModelTableId>9</ModelTableId>
+          <ModelTableIndexId>0</ModelTableIndexId>
+          <Clustered>true</Clustered>
+        </ModelTablePrimaryKey>
+      </ModelTableIndex>
+    </ModelTable>
+    <ModelTable>
+      <ModelTableId>10</ModelTableId>
+      <ModelSchemaId>0</ModelSchemaId>
+      <Name>ExchangeType</Name>
+      <IncludeInDataSync>true</IncludeInDataSync>
+      <ModelTableColumn>
+        <ModelTableId>10</ModelTableId>
+        <ModelTableColumnId>0</ModelTableColumnId>
+        <Sequence>0</Sequence>
+        <Name>Id</Name>
+        <DataTypeName>int</DataTypeName>
+        <IdentitySeed>1</IdentitySeed>
+        <IdentityIncrement>1</IdentityIncrement>
+        <ModelTableIdentity>
+          <ModelTableId>10</ModelTableId>
+          <ModelTableColumnId>0</ModelTableColumnId>
+        </ModelTableIdentity>
+      </ModelTableColumn>
+      <ModelTableLocation>
+        <SubModelId>0</SubModelId>
+        <ModelTableId>10</ModelTableId>
+        <WorldXi>787</WorldXi>
+        <WorldYi>221</WorldYi>
+      </ModelTableLocation>
+      <ModelTableIndex>
+        <ModelTableId>10</ModelTableId>
+        <ModelTableIndexId>0</ModelTableIndexId>
+        <Sequence>0</Sequence>
+        <IsIndex>false</IsIndex>
+        <IsUnique>true</IsUnique>
+        <ModelTableIndexColumn>
+          <ModelTableId>10</ModelTableId>
+          <ModelTableIndexId>0</ModelTableIndexId>
+          <ModelTableColumnId>0</ModelTableColumnId>
+          <Sequence>0</Sequence>
+        </ModelTableIndexColumn>
+        <ModelTablePrimaryKey>
+          <ModelTableId>10</ModelTableId>
+          <ModelTableIndexId>0</ModelTableIndexId>
+          <Clustered>true</Clustered>
+        </ModelTablePrimaryKey>
+      </ModelTableIndex>
+    </ModelTable>
+    <ModelTable>
+      <ModelTableId>11</ModelTableId>
+      <ModelSchemaId>0</ModelSchemaId>
+      <Name>Status</Name>
+      <IncludeInDataSync>true</IncludeInDataSync>
+      <ModelTableColumn>
+        <ModelTableId>11</ModelTableId>
+        <ModelTableColumnId>0</ModelTableColumnId>
+        <Sequence>0</Sequence>
+        <Name>Id</Name>
+        <DataTypeName>int</DataTypeName>
+      </ModelTableColumn>
+      <ModelTableLocation>
+        <SubModelId>0</SubModelId>
+        <ModelTableId>11</ModelTableId>
+        <WorldXi>763</WorldXi>
+        <WorldYi>372</WorldYi>
+      </ModelTableLocation>
+      <ModelTableIndex>
+        <ModelTableId>11</ModelTableId>
+        <ModelTableIndexId>0</ModelTableIndexId>
+        <Sequence>0</Sequence>
+        <IsIndex>false</IsIndex>
+        <IsUnique>true</IsUnique>
+        <ModelTableIndexColumn>
+          <ModelTableId>11</ModelTableId>
+          <ModelTableIndexId>0</ModelTableIndexId>
+          <ModelTableColumnId>0</ModelTableColumnId>
+          <Sequence>0</Sequence>
+        </ModelTableIndexColumn>
+        <ModelTablePrimaryKey>
+          <ModelTableId>11</ModelTableId>
           <ModelTableIndexId>0</ModelTableIndexId>
           <Clustered>true</Clustered>
         </ModelTablePrimaryKey>
