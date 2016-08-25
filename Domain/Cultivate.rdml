@@ -3,7 +3,7 @@
   <ModelProperties>
     <RowOne>0</RowOne>
     <SchemaVersion>8</SchemaVersion>
-    <LastEditTimeStamp>2016-08-23T17:49:59.8952798-07:00</LastEditTimeStamp>
+    <LastEditTimeStamp>2016-08-25T06:11:40.0813666-07:00</LastEditTimeStamp>
     <Name>Cultivar</Name>
     <Author>BENSWINLAPTOP\marip</Author>
     <Version>1.0.0</Version>
@@ -13,8 +13,8 @@
   <SubModel>
     <SubModelId>0</SubModelId>
     <Name>Main</Name>
-    <ViewX>108.58319869968112</ViewX>
-    <ViewY>0</ViewY>
+    <ViewX>5.7757020584937173</ViewX>
+    <ViewY>75.4874992096112</ViewY>
     <ZoomLevel>105.69079987353778</ZoomLevel>
     <CanvasWidthi>1270</CanvasWidthi>
     <CanvasHeighti>625</CanvasHeighti>
@@ -396,6 +396,7 @@
         <ModelTableColumnId>4</ModelTableColumnId>
         <Sequence>5</Sequence>
         <Name>CultivarId</Name>
+        <AllowNull>true</AllowNull>
         <DataTypeName>int</DataTypeName>
       </ModelTableColumn>
       <ModelRelationship>
@@ -543,6 +544,57 @@
         <Sequence>11</Sequence>
         <Name>StatusId</Name>
         <DataTypeName>int</DataTypeName>
+      </ModelTableColumn>
+      <ModelTableColumn>
+        <ModelTableId>5</ModelTableId>
+        <ModelTableColumnId>12</ModelTableColumnId>
+        <Sequence>12</Sequence>
+        <Name>PricePerUnit</Name>
+        <DataTypeName>money</DataTypeName>
+      </ModelTableColumn>
+      <ModelTableColumn>
+        <ModelTableId>5</ModelTableId>
+        <ModelTableColumnId>13</ModelTableColumnId>
+        <Sequence>13</Sequence>
+        <Name>TransactionFee</Name>
+        <DataTypeName>money</DataTypeName>
+      </ModelTableColumn>
+      <ModelTableColumn>
+        <ModelTableId>5</ModelTableId>
+        <ModelTableColumnId>14</ModelTableColumnId>
+        <Sequence>14</Sequence>
+        <Name>ShippingHandling</Name>
+        <DataTypeName>money</DataTypeName>
+      </ModelTableColumn>
+      <ModelTableColumn>
+        <ModelTableId>5</ModelTableId>
+        <ModelTableColumnId>15</ModelTableColumnId>
+        <Sequence>15</Sequence>
+        <Name>CreatedById</Name>
+        <DataTypeName>int</DataTypeName>
+      </ModelTableColumn>
+      <ModelTableColumn>
+        <ModelTableId>5</ModelTableId>
+        <ModelTableColumnId>16</ModelTableColumnId>
+        <Sequence>16</Sequence>
+        <Name>CreateDateTime</Name>
+        <DefaultValue>SYSUTCDATETIME()</DefaultValue>
+        <DataTypeName>datetime</DataTypeName>
+      </ModelTableColumn>
+      <ModelTableColumn>
+        <ModelTableId>5</ModelTableId>
+        <ModelTableColumnId>17</ModelTableColumnId>
+        <Sequence>17</Sequence>
+        <Name>LastChangedById</Name>
+        <DataTypeName>int</DataTypeName>
+      </ModelTableColumn>
+      <ModelTableColumn>
+        <ModelTableId>5</ModelTableId>
+        <ModelTableColumnId>18</ModelTableColumnId>
+        <Sequence>18</Sequence>
+        <Name>LastChangedDateTime</Name>
+        <DefaultValue>SYSUTCDATETIME()</DefaultValue>
+        <DataTypeName>datetime</DataTypeName>
       </ModelTableColumn>
       <ModelTableLocation>
         <SubModelId>0</SubModelId>
@@ -721,6 +773,36 @@
         <Name>SpeciesId</Name>
         <DataTypeName>int</DataTypeName>
       </ModelTableColumn>
+      <ModelTableColumn>
+        <ModelTableId>7</ModelTableId>
+        <ModelTableColumnId>4</ModelTableColumnId>
+        <Sequence>4</Sequence>
+        <Name>CreatedById</Name>
+        <DataTypeName>int</DataTypeName>
+      </ModelTableColumn>
+      <ModelTableColumn>
+        <ModelTableId>7</ModelTableId>
+        <ModelTableColumnId>5</ModelTableColumnId>
+        <Sequence>5</Sequence>
+        <Name>CreateDateTime</Name>
+        <DefaultValue>SYSUTCDATETIME()</DefaultValue>
+        <DataTypeName>datetime</DataTypeName>
+      </ModelTableColumn>
+      <ModelTableColumn>
+        <ModelTableId>7</ModelTableId>
+        <ModelTableColumnId>6</ModelTableColumnId>
+        <Sequence>6</Sequence>
+        <Name>LastChangedById</Name>
+        <DataTypeName>int</DataTypeName>
+      </ModelTableColumn>
+      <ModelTableColumn>
+        <ModelTableId>7</ModelTableId>
+        <ModelTableColumnId>7</ModelTableColumnId>
+        <Sequence>7</Sequence>
+        <Name>LastChangedDateTime</Name>
+        <DefaultValue>SYSUTCDATETIME()</DefaultValue>
+        <DataTypeName>datetime</DataTypeName>
+      </ModelTableColumn>
       <ModelRelationship>
         <ParentModelTableId>2</ParentModelTableId>
         <ModelTableIndexId>0</ModelTableIndexId>
@@ -811,10 +893,41 @@
         <Name>SeedId</Name>
         <DataTypeName>int</DataTypeName>
       </ModelTableColumn>
+      <ModelTableColumn>
+        <ModelTableId>8</ModelTableId>
+        <ModelTableColumnId>4</ModelTableColumnId>
+        <Sequence>4</Sequence>
+        <Name>CreatedById</Name>
+        <DataTypeName>int</DataTypeName>
+      </ModelTableColumn>
+      <ModelTableColumn>
+        <ModelTableId>8</ModelTableId>
+        <ModelTableColumnId>5</ModelTableColumnId>
+        <Sequence>5</Sequence>
+        <Name>CreateDateTime</Name>
+        <DefaultValue>SYSUTCDATETIME()</DefaultValue>
+        <DataTypeName>datetime</DataTypeName>
+      </ModelTableColumn>
+      <ModelTableColumn>
+        <ModelTableId>8</ModelTableId>
+        <ModelTableColumnId>6</ModelTableColumnId>
+        <Sequence>6</Sequence>
+        <Name>LastChangedById</Name>
+        <DataTypeName>int</DataTypeName>
+      </ModelTableColumn>
+      <ModelTableColumn>
+        <ModelTableId>8</ModelTableId>
+        <ModelTableColumnId>7</ModelTableColumnId>
+        <Sequence>7</Sequence>
+        <Name>LastChangedDateTime</Name>
+        <DefaultValue>SYSUTCDATETIME()</DefaultValue>
+        <DataTypeName>datetime</DataTypeName>
+      </ModelTableColumn>
       <ModelRelationship>
         <ParentModelTableId>4</ParentModelTableId>
         <ModelTableIndexId>0</ModelTableIndexId>
         <ChildModelTableId>8</ChildModelTableId>
+        <CardinalityMode>Z</CardinalityMode>
         <ModelRelationshipMapping>
           <ParentModelTableId>4</ParentModelTableId>
           <ChildModelTableId>8</ChildModelTableId>
@@ -1074,6 +1187,49 @@
         </ModelTableIndexColumn>
         <ModelTablePrimaryKey>
           <ModelTableId>11</ModelTableId>
+          <ModelTableIndexId>0</ModelTableIndexId>
+          <Clustered>true</Clustered>
+        </ModelTablePrimaryKey>
+      </ModelTableIndex>
+    </ModelTable>
+    <ModelTable>
+      <ModelTableId>12</ModelTableId>
+      <ModelSchemaId>0</ModelSchemaId>
+      <Name>Announcements</Name>
+      <IncludeInDataSync>true</IncludeInDataSync>
+      <ModelTableColumn>
+        <ModelTableId>12</ModelTableId>
+        <ModelTableColumnId>0</ModelTableColumnId>
+        <Sequence>0</Sequence>
+        <Name>Id</Name>
+        <DataTypeName>int</DataTypeName>
+        <IdentitySeed>1</IdentitySeed>
+        <IdentityIncrement>1</IdentityIncrement>
+        <ModelTableIdentity>
+          <ModelTableId>12</ModelTableId>
+          <ModelTableColumnId>0</ModelTableColumnId>
+        </ModelTableIdentity>
+      </ModelTableColumn>
+      <ModelTableLocation>
+        <SubModelId>0</SubModelId>
+        <ModelTableId>12</ModelTableId>
+        <WorldXi>1045</WorldXi>
+        <WorldYi>385</WorldYi>
+      </ModelTableLocation>
+      <ModelTableIndex>
+        <ModelTableId>12</ModelTableId>
+        <ModelTableIndexId>0</ModelTableIndexId>
+        <Sequence>0</Sequence>
+        <IsIndex>false</IsIndex>
+        <IsUnique>true</IsUnique>
+        <ModelTableIndexColumn>
+          <ModelTableId>12</ModelTableId>
+          <ModelTableIndexId>0</ModelTableIndexId>
+          <ModelTableColumnId>0</ModelTableColumnId>
+          <Sequence>0</Sequence>
+        </ModelTableIndexColumn>
+        <ModelTablePrimaryKey>
+          <ModelTableId>12</ModelTableId>
           <ModelTableIndexId>0</ModelTableIndexId>
           <Clustered>true</Clustered>
         </ModelTablePrimaryKey>
