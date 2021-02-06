@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "CultivateSeed.Infrastructure.Database/1.0.0": {
+        "runtime": {
+          "CultivateSeed.Infrastructure.Database.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CultivateSeed.Infrastructure.Database/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
